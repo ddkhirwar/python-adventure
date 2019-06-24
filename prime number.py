@@ -1,9 +1,21 @@
+import math
+c=0
+n = 2147483647
 
-num = int(input("enter a number: "))
-for i in range(2, num):
-	if num % i  == 0:
-		print("not prime number")
-		break
-else:
-	print("prime number")
+sqrroot = int(math.sqrt(n))
 
+for i in range (2,sqrroot):
+    if (n % i == 0):
+        c=c+1
+        break
+        
+if c >0:
+    print ("not prime")
+else: 
+    print ("prime")
+            
+                
+                
+        
+        
+   
