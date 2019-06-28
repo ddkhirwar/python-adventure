@@ -1,6 +1,6 @@
 import math
 c=0
-n = 2147483647
+n = 999999999999
 
 sqrroot = int(math.sqrt(n))
 
