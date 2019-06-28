@@ -11,6 +11,9 @@ def isprime(n) :
         return True
     else:
         return False
-    
+
+for n in reversed(range(100000,999999)):
+    if isprime(n) == True :
+        print ("biggest_six_digit_prime:"+str(n))
+        break
         
-print(isprime(999999))
