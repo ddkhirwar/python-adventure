@@ -12,7 +12,12 @@ def isprime(n) :
     else:
         return False
 
-for n in reversed(range(100000,999999)):
+no_of_digits = input("Enter the no of digits:")
+no_of_digits = int(no_of_digits) -1
+start_range = 10**no_of_digits
+end_range = 10**(no_of_digits+1)-1
+
+for n in reversed(range(start_range,end_range)):
     if isprime(n) == True :
         print ("biggest_six_digit_prime:"+str(n))
         break
